@@ -813,7 +813,10 @@ header .max-w nav {
         line-height: 15px;
         color: #000000;
         margin-right: 7px;
-        margin-bottom: 7px; }
+        margin-bottom: 7px;
+        transition: 0.3s; }
+        .any-else .container .chooseContainer div span:hover {
+          transform: scale(1.1); }
         @media screen and (min-width: 360px) {
           .any-else .container .chooseContainer div span {
             font-size: 10px;

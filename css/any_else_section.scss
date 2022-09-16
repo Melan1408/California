@@ -110,6 +110,13 @@
 
           margin-right: 7px;
           margin-bottom: 7px;
+
+          transition: 0.3s;
+
+          &:hover{
+            transform: scale(1.1);
+          }
+
           @include min-screen(360px) {
             font-size: 10px;
             line-height: 17px;
