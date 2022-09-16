@@ -1,0 +1,192 @@
+
+.latest_product {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include min-screen(768px) {
+    padding-top: 75px;
+    padding-bottom: 78px;
+  }
+
+  .container {
+    &.max-w {
+      @include min-screen(1200px) {
+        max-width: 1294px;
+      }
+    }
+
+    .description-container {
+      max-width: 628px;
+
+      p {
+        font-family: 'Readex Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 25px;
+        @include min-screen(360px) {
+          font-size: 14px;
+          line-height: 17px;
+        }
+        @include min-screen(576px) {
+          margin-bottom: 55px;
+        }
+      }
+    }
+
+    .row {
+      h4 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 0;
+        @include min-screen(360px) {
+          font-size: 15px;
+          line-height: 19px;
+        }
+      }
+
+      p {
+        font-family: 'Readex Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000000;
+        margin-bottom: 0;
+        @include min-screen(360px) {
+          font-size: 24px;
+          line-height: 38px;
+        }
+        @include min-screen(768px) {
+          font-size: 32px;
+        }
+      }
+
+      .laptop-item {
+        margin-bottom: 20px;
+        @include min-screen(1200px) {
+          margin-bottom: 72px;
+        }
+        padding: 0;
+        @include min-screen(768px) {
+          padding: 0 97px 95px 42px;
+        }
+
+        .discription-card {
+          top: 20px;
+          right: 20px;
+          @include min-screen(768px) {
+            bottom: 60px;
+            right: 80px;
+          }
+          @include min-screen(1200px) {
+            bottom: 0;
+            right: 40px;
+          }
+          text-align: right;
+        }
+
+        img {
+          max-height: 80%;
+          max-width: 80%;
+          @include min-screen(576px) {
+            max-height: inherit;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .watch-item {
+        padding: 0;
+        margin-bottom: 20px;
+        @include min-screen(768px) {
+          padding-left: 42px;
+        }
+        @include min-screen(1200px) {
+          margin-bottom: 0px;
+        }
+
+        .discription-card {
+          bottom: 35%;
+          right: 20px;
+          text-align: right;
+          @include min-screen(768px) {
+            right: 40px;
+          }
+        }
+
+        img {
+          max-height: 70%;
+          max-width: 70%;
+          @include min-screen(576px) {
+            max-height: inherit;
+            max-width: 100%;
+          }
+        }
+      }
+
+      .phone-item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: end;
+        margin-bottom: 20px;
+        @include min-screen(768px) {
+          padding-top: 144px;
+          min-height: 792px;
+          margin-bottom: 0;
+        }
+
+        img {
+          margin-bottom: 41px;
+          max-height: 80%;
+          max-width: 80%;
+          @include min-screen(576px) {
+            max-height: inherit;
+            max-width: 100%;
+          }
+        }
+
+        .discription-card {
+          text-align: center;
+        }
+      }
+
+      .tablet-item {
+        padding-top: 40px;
+        text-align: center;
+        @include min-screen(768px) {
+          padding-top: 60px;
+          min-height: 792px;
+        }
+        @include min-screen(1200px) {
+          padding-top: 114px;
+        }
+
+        img {
+          max-height: 80%;
+          max-width: 80%;
+
+          @include min-screen(576px) {
+            max-height: inherit;
+            max-width: 100%;
+          }
+
+          @include min-screen(768px) {
+            padding-top: 60px;
+          }
+        }
+
+        .discription-card {
+          text-align: center;
+          margin-bottom: 42px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.new_product {
+  padding-top: 5px;
+  @include min-screen(768px) {
+    padding-top: 18px;
+  }
+  @include min-screen(1200px) {
+    padding-top: 28px;
+  }
+
+  .banner {
+    background: #DCE5E2;
+    border-radius: 32px;
+    overflow: hidden;
+    max-width: 90%;
+
+    @include min-screen(576px) {
+      max-width: 540px;
+    }
+    @include min-screen(768px) {
+      max-width: 720px;
+    }
+    @include min-screen(992px) {
+      max-width: 960px;
+    }
+    @include min-screen(1200px) {
+      max-width: 1294px;
+    }
+
+    .owl-nav {
+      .owl-prev {
+        position: absolute;
+        left: 5px;
+        top: 60%;
+        @include min-screen(576px) {
+          top: 50%;
+          left: 19px;
+        }
+        @include min-screen(768px) {
+          left: 30px;
+          top: 45%;
+        }
+        @include min-screen(1200px) {
+          top: 50%;
+          left: 19px;
+        }
+        background-image: url("../images/arrow_left_icon.svg") !important;
+        width: 14px;
+        height: 26px;
+      }
+
+      .owl-next {
+        position: absolute;
+        right: 5px;
+        top: 60%;
+        @include min-screen(576px) {
+          top: 50%;
+          right: 19px;
+        }
+        @include min-screen(768px) {
+          right: 30px;
+          top: 45%;
+        }
+        @include min-screen(1200px) {
+          top: 50%;
+          right: 19px;
+        }
+        background-image: url("../images/arrow_right_icon.svg") !important;
+        width: 14px;
+        height: 26px;
+      }
+    }
+
+    .owl-dots {
+      text-align: center;
+      display: inherit;
+      position: absolute;
+      bottom: 14px;
+      left: 25%;
+      @include min-screen(320px) {
+        left: 28%;
+      }
+      @include min-screen(360px) {
+        left: 30%;
+        bottom: 34px;
+      }
+      @include min-screen(390px) {
+        left: 22%
+      }
+      @include min-screen(414px) {
+        left: 25%
+      }
+      @include min-screen(768px) {
+        left: 25%;
+      }
+      @include min-screen(992px) {
+        left: 30%;
+      }
+
+      span {
+        margin-right: 20px;
+        display: inline-block;
+        width: 30px;
+        @include min-screen(390px) {
+          margin-right: 34px;
+          width: 40px;
+        }
+        @include min-screen(576px) {
+          width: 90px;
+        }
+        @include min-screen(1200px) {
+          width: 194px;
+        }
+        height: 2px;
+        background: url("../images/dots_icon.jpg");
+      }
+
+      .active span {
+        margin-right: 20px;
+        display: inline-block;
+        width: 30px;
+        @include min-screen(390px) {
+          margin-right: 34px;
+          width: 40px;
+        }
+        @include min-screen(576px) {
+          width: 90px;
+        }
+        @include min-screen(1200px) {
+          width: 194px;
+        }
+        height: 4px;
+        background: url("../images/dots_icon.jpg");
+      }
+    }
+
+    .discription {
+      padding: 30px 10px 40px 10px;
+      text-align: center;
+      background-image: url("../images/new_product_banner.png");
+      background-repeat: no-repeat;
+      background-size: 170px 150px;
+      background-position: 48% 62%;
+
+      @include min-screen(360px) {
+        padding: 60px 10px 70px 10px;
+      }
+      @include min-screen(576px) {
+        padding: 145px 3px 127px 50px;
+        text-align: inherit;
+        background: inherit;
+      }
+
+      h1 {
+        margin-bottom: 19px;
+
+      }
+
+      p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        margin-bottom: 185px;
+        @include min-screen(360px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        @include min-screen(576px) {
+          margin-bottom: 30px;
+        }
+
+      }
+
+      a {
+        padding: 8px 25px;
+
+        border-radius: 200px;
+        border: 1px solid black;
+
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: capitalize;
+        color: #000000;
+
+        @include min-screen(360px) {
+          padding: 10px 35px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        @include min-screen(576px) {
+          padding: 14px 53px;
+        }
+      }
+    }
+
+    .banner-img {
+      background-image: url("../images/new_product_banner.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

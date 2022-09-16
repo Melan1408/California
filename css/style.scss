@@ -1,0 +1,84 @@
+@import "mixin";
+@import "header";
+@import "new_product_section";
+@import "latest_product_section";
+@import "most_selled_items_section";
+@import "best_around_section";
+@import "ideas_section";
+@import "any_else_section";
+@import "footer";
+
+
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Readex Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  @include min-screen(360px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  @include min-screen(576px) {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  @include min-screen(768px) {
+    font-size: 58px;
+  }
+}
+
+
+h2 {
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 9px;
+  @include min-screen(360px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  @include min-screen(576px) {
+    font-size: 32px;
+    line-height: 52px;
+  }
+  @include min-screen(768px) {
+    font-size: 42px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

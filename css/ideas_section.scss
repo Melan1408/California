@@ -1,0 +1,135 @@
+
+.ideas {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  text-align: center;
+  @include min-screen(768px) {
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
+
+  .container {
+    &.max-w {
+      @include min-screen(1200px) {
+        max-width: 1294px;
+      }
+    }
+
+    p {
+      font-family: 'Readex Pro', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 15px;
+      color: #000000;
+      margin-bottom: 20px;
+      text-align: center;
+      @include min-screen(360px) {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 36px;
+      }
+      @include min-screen(768px) {
+        margin-bottom: 56px;
+      }
+    }
+
+    .row {
+      margin-bottom: 30px;
+      @include min-screen(1200px) {
+        margin-bottom: 73px;
+      }
+
+      .banner-img {
+        background-image: url("../images/ideas_banner.jpg");
+        background-repeat: no-repeat;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+
+      .col-md-6 {
+
+        text-align: center;
+
+        .card-item {
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          border-radius: 16px;
+          &:before {
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: url("../images/ideas_banner.jpg");
+            opacity: 0.35;
+            @include min-screen(576px) {
+              content:inherit;
+            }
+          }
+          p {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            color: #000000;
+            text-align: left;
+            margin-bottom: 15px;
+            @include min-screen(360px) {
+              font-size: 18px;
+              line-height: 30px;
+              margin-bottom: 28px;
+            }
+            @include min-screen(576px) {
+              font-size: 24px;
+            }
+
+            &:last-of-type {
+              margin-bottom: 0px;
+            }
+          }
+
+          &:last-of-type {
+            padding-top: 14px;
+            padding-bottom: 30px;
+            @include min-screen(768px) {
+              padding-top: 14px;
+              padding-bottom: 142px;
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #000000;
+      display: inline-flex;
+      @include min-screen(360px) {
+        font-size: 18px;
+        line-height: 29px;
+      }
+      @include min-screen(576px) {
+        font-size: 24px;
+      }
+
+      &:after {
+        content: "";
+        background-image: url("../images/see_all-icon.svg");
+        background-size: cover;
+        height: 18px;
+        width: 20px;
+        @include min-screen(360px) {
+          width: 30px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
