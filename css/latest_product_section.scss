@@ -6,14 +6,17 @@
     padding-top: 75px;
     padding-bottom: 78px;
   }
+
   .container {
     &.max-w {
       @include min-screen(1200px) {
         max-width: 1294px;
       }
     }
+
     .description-container {
       max-width: 628px;
+
       p {
         font-family: 'Readex Pro', sans-serif;
         font-style: normal;
@@ -32,6 +35,7 @@
         }
       }
     }
+
     .row {
       h4 {
         font-family: 'Inter', sans-serif;
@@ -46,6 +50,7 @@
           line-height: 19px;
         }
       }
+
       p {
         font-family: 'Readex Pro', sans-serif;
         font-style: normal;
@@ -62,6 +67,7 @@
           font-size: 32px;
         }
       }
+
       .laptop-item {
         margin-bottom: 20px;
         @include min-screen(1200px) {
@@ -71,6 +77,7 @@
         @include min-screen(768px) {
           padding: 0 97px 95px 42px;
         }
+
         .discription-card {
           top: 20px;
           right: 20px;
@@ -84,6 +91,7 @@
           }
           text-align: right;
         }
+
         img {
           max-height: 80%;
           max-width: 80%;
@@ -93,6 +101,7 @@
           }
         }
       }
+
       .watch-item {
         padding: 0;
         margin-bottom: 20px;
@@ -102,6 +111,7 @@
         @include min-screen(1200px) {
           margin-bottom: 0px;
         }
+
         .discription-card {
           bottom: 35%;
           right: 20px;
@@ -110,6 +120,7 @@
             right: 40px;
           }
         }
+
         img {
           max-height: 70%;
           max-width: 70%;
@@ -119,29 +130,35 @@
           }
         }
       }
+
       .phone-item {
+        text-align: center;
         padding-top: 40px;
         padding-bottom: 40px;
-        text-align: end;
         margin-bottom: 20px;
         @include min-screen(768px) {
           padding-top: 144px;
           min-height: 792px;
           margin-bottom: 0;
+          text-align: end;
         }
+
         img {
           margin-bottom: 41px;
           max-height: 60%;
           max-width: 60%;
+          text-align: end;
           @include min-screen(576px) {
             max-height: inherit;
             max-width: 100%;
           }
         }
+
         .discription-card {
           text-align: center;
         }
       }
+
       .tablet-item {
         padding-top: 40px;
         text-align: center;
@@ -152,6 +169,7 @@
         @include min-screen(1200px) {
           padding-top: 114px;
         }
+
         img {
           max-height: 60%;
           max-width: 60%;
@@ -165,6 +183,7 @@
             padding-top: 60px;
           }
         }
+
         .discription-card {
           text-align: center;
           margin-bottom: 42px;

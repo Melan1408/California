@@ -392,19 +392,21 @@ header .max-w nav {
           max-height: inherit;
           max-width: 100%; } }
   .latest_product .container .row .phone-item {
+    text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    text-align: end;
     margin-bottom: 20px; }
     @media screen and (min-width: 768px) {
       .latest_product .container .row .phone-item {
         padding-top: 144px;
         min-height: 792px;
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        text-align: end; } }
     .latest_product .container .row .phone-item img {
       margin-bottom: 41px;
       max-height: 60%;
-      max-width: 60%; }
+      max-width: 60%;
+      text-align: end; }
       @media screen and (min-width: 576px) {
         .latest_product .container .row .phone-item img {
           max-height: inherit;
