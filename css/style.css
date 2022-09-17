@@ -273,21 +273,10 @@ header .max-w nav {
           .new_product .banner .discription p {
             margin-bottom: 30px; } }
       .new_product .banner .discription a {
-        padding: 8px 25px;
-        border-radius: 200px;
-        border: 1px solid black;
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        text-transform: capitalize;
-        color: #000000; }
+        padding: 8px 25px; }
         @media screen and (min-width: 360px) {
           .new_product .banner .discription a {
-            padding: 10px 35px;
-            font-size: 18px;
-            line-height: 22px; } }
+            padding: 10px 35px; } }
         @media screen and (min-width: 576px) {
           .new_product .banner .discription a {
             padding: 14px 53px; } }
@@ -414,8 +403,8 @@ header .max-w nav {
         margin-bottom: 0; } }
     .latest_product .container .row .phone-item img {
       margin-bottom: 41px;
-      max-height: 80%;
-      max-width: 80%; }
+      max-height: 60%;
+      max-width: 60%; }
       @media screen and (min-width: 576px) {
         .latest_product .container .row .phone-item img {
           max-height: inherit;
@@ -433,8 +422,8 @@ header .max-w nav {
       .latest_product .container .row .tablet-item {
         padding-top: 114px; } }
     .latest_product .container .row .tablet-item img {
-      max-height: 80%;
-      max-width: 80%; }
+      max-height: 60%;
+      max-width: 60%; }
       @media screen and (min-width: 576px) {
         .latest_product .container .row .tablet-item img {
           max-height: inherit;
@@ -590,23 +579,12 @@ header .max-w nav {
             font-size: 28px; } }
     .best-around .container .row .card-item a {
       padding: 8px 25px;
-      border-radius: 200px;
-      border: 1px solid black;
-      font-family: 'Inter', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 18px;
-      text-transform: capitalize;
-      color: #000000;
       margin: auto;
       display: block;
       max-width: fit-content; }
       @media screen and (min-width: 360px) {
         .best-around .container .row .card-item a {
-          padding: 10px 35px;
-          font-size: 18px;
-          line-height: 22px; } }
+          padding: 10px 35px; } }
       @media screen and (min-width: 576px) {
         .best-around .container .row .card-item a {
           padding: 14px 63px; } }
@@ -778,18 +756,7 @@ header .max-w nav {
         transition: inherit;
         height: inherit;
         margin-top: 5px;
-        margin-bottom: 5px;
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        text-align: left;
-        color: #000000; }
-        @media screen and (min-width: 360px) {
-          .any-else .container .formContainer form input {
-            font-size: 12px;
-            line-height: 15px; } }
+        margin-bottom: 5px; }
         .any-else .container .formContainer form input:focus {
           outline: none;
           border: none; }
@@ -881,21 +848,12 @@ header .max-w nav {
           background: transparent;
           outline: none;
           width: 71%;
-          font-family: 'Inter', sans-serif;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 11px;
-          line-height: 14px;
-          text-align: left;
-          color: #000000;
           padding-left: 16px;
           margin: 0; }
           @media screen and (min-width: 360px) {
             .any-else .container .miss_thing .formContainer form input {
               padding-top: 16px;
               padding-bottom: 17px;
-              font-size: 14px;
-              line-height: 17px;
               padding-left: 26px; } }
           @media screen and (min-width: 576px) {
             .any-else .container .miss_thing .formContainer form input {
@@ -1119,5 +1077,33 @@ h2 {
   @media screen and (min-width: 768px) {
     h2 {
       font-size: 42px; } }
+
+input {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: left;
+  color: #000000; }
+  @media screen and (min-width: 360px) {
+    input {
+      font-size: 14px;
+      line-height: 17px; } }
+
+.new_product .banner .discription a, .best-around .container .row .card-item a {
+  border-radius: 200px;
+  border: 1px solid black;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #000000; }
+  @media screen and (min-width: 360px) {
+    .new_product .banner .discription a, .best-around .container .row .card-item a {
+      font-size: 18px;
+      line-height: 22px; } }
 
 /*# sourceMappingURL=style.css.map */

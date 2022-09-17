@@ -3,12 +3,11 @@ header {
     @include min-screen(1200px) {
       max-width: 1294px;
     }
-
     nav {
       .nav-link {
         padding: 0 !important;
       }
-      .logo{
+      .logo {
         max-width: 120px;
         @include min-screen(375px) {
           max-width: 150px;
@@ -16,7 +15,7 @@ header {
         @include min-screen(576px) {
           max-width: inherit;
         }
-        img{
+        img {
           width: 100%;
         }
       }
@@ -27,25 +26,24 @@ header {
       @include min-screen(768px) {
         padding: 28px 0;
       }
-      .navbar-toggler{
+      .navbar-toggler {
         padding: 2px;
         @include min-screen(375px) {
           padding: 0.25rem 0.75rem;
         }
-        .navbar-toggler-icon{
+        .navbar-toggler-icon {
           width: 25px;
           height: 30px;
           @include min-screen(375px) {
             width: 1.5em;
             height: 1.5em;
           }
-        }}
-
+        }
+      }
       #navbarSupportedContent {
         ul {
           li {
             padding-top: 3px !important;
-
             a {
               font-family: 'Inter', sans-serif;
               font-style: normal;
@@ -55,7 +53,6 @@ header {
               text-transform: uppercase;
               color: #000000;
             }
-
             &:first-of-type {
               margin-left: 8px;
               margin-bottom: 5px;
@@ -71,7 +68,6 @@ header {
                 margin-right: 33px;
               }
             }
-
             &:nth-child(2) {
               margin-left: 8px;
               margin-bottom: 5px;
@@ -87,7 +83,6 @@ header {
                 margin-right: 49px;
               }
             }
-
             &:nth-child(3) {
               margin-left: 8px;
               margin-bottom: 5px;
@@ -103,7 +98,6 @@ header {
                 margin-right: 44px;
               }
             }
-
             &:nth-child(4) {
               margin-left: 8px;
               margin-bottom: 5px;
@@ -119,7 +113,6 @@ header {
                 margin-right: 300px;
               }
             }
-
             &:nth-child(5) {
               padding-top: 0px !important;;
               margin-left: 8px;
@@ -133,7 +126,6 @@ header {
                 margin-right: 15px;
               }
             }
-
             &:last-of-type {
               padding-top: 0px !important;;
               @include min-screen(768px) {

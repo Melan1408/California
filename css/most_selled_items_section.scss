@@ -6,7 +6,6 @@
         max-width: 1294px;
       }
     }
-
     p {
       font-family: 'Readex Pro', sans-serif;
       font-style: normal;
@@ -27,7 +26,6 @@
         margin-bottom: 31px;
       }
     }
-
     .row {
       .card-item {
         text-align: center;
@@ -42,7 +40,6 @@
             padding: 28px;
           }
         }
-
         h3 {
           font-family: 'Readex Pro', sans-serif;
           font-style: normal;
@@ -57,7 +54,6 @@
             line-height: 28px;
           }
         }
-
         p {
           font-family: 'Inter', sans-serif;
           font-style: normal;
@@ -67,12 +63,10 @@
           color: #4B4B4B;
           margin-bottom: 8px;
           text-align: left;
-
           @include min-screen(360px) {
             font-size: 14px;
             line-height: 17px;
           }
-
           &:last-of-type {
             font-size: 14px;
             line-height: 18px;
@@ -84,7 +78,6 @@
 
           }
         }
-
         &:first-of-type {
           p {
             margin-bottom: 8px;
